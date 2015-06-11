@@ -1,0 +1,358 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+body{
+ font-family: Verdana, Geneva, sans-serif;
+   background-image: url(images/free_web_background_3_by_kgombocka-d4gz4lh.jpg); 
+}
+body:before{
+       content: "";
+          position: fixed;
+          top: -10px;
+          left: 0;
+          width: 100%;
+          height: 10px;
+
+          -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+          z-index: 100;
+
+}
+
+header{
+    color:rgba(224, 118, 22,.6); 
+   
+    text-align: left;
+    padding-left: 250px;
+    padding-top: 2px;
+    
+    
+    
+    font-family: Impact, Charcoal, sans-serif;
+    min-height: 80px;
+ 
+    width: 100%;
+    
+}
+header h1{
+    color:rgba(224, 118, 22,.6);
+
+    
+    font-size: large;
+    font-style: oblique;
+    text-shadow: 2px 2px #222222,
+                -2px -2px #222222;
+
+    
+}
+#title{
+    margin-right: 150px;
+    
+}
+#tag{
+    font-size: smaller;
+    margin-left:180px;
+    margin-top: -20px;
+    color:rgba(224, 118, 22,.9); 
+}
+
+footer{
+    background: linear-gradient(to bottom right, #F0DD9F, rgba(0,255,0,0));
+    min-height: 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%
+   
+
+}
+#sideNav{
+    
+    border-top: 1px solid antiquewhite;
+    background-color: dimgray;
+    margin-top: -30px;
+   
+}
+#sideNav ul{
+    margin-left: -70px;
+    margin-right:-110px;
+}
+
+#sideNav ul li{
+
+    
+    display: inline-block;
+    list-style-type: none;
+    text-align: center;
+    
+    
+   
+}
+#sideNav ul li a{
+    display: block;
+    width: 150px;
+    border: 1px solid antiquewhite;
+    font-size: 12px;
+    border-radius: 8px;
+    text-decoration: none}
+#sideNav ul li a:link{color:antiquewhite}
+#sideNav ul li a:visited{color:antiquewhite}
+#sideNav ul li a:hover{color:#79BD8F;background-color:  palegoldenrod}
+#sideNav ul li a:active{color:palegoldenrod}
+
+
+
+#topFrame{
+    border-bottom: 4px groove #d9d9d9;
+    border-top: 4px groove  rgba(255,255,255, .4);
+    padding: 40px;
+    padding-top: 20px;
+    background-color: rgba(255,255,255,.2);
+}
+#topFrame img{
+    float: left;
+    padding-right: 40px;
+}
+
+#midLeft{
+   background-color: rgba(255,255,255,.2);
+    width: 50%;
+    border-right: 4px groove #d9d9d9;
+        
+}
+#midRight{
+    background-color: rgba(255,255,255,.2);
+    width:50%;
+}
+#mainBody{
+    margin-right: auto;
+    margin-left: auto;
+    width: 950px;
+    min-height: 900px;
+    background-color: rgba(255,255,255,.8);
+    
+}
+#mainBody p{
+    font-size: 12px;
+ 
+}
+#headBuffer{
+    min-height: 25px;
+    min-width: 250px;
+    max-height:25px;
+    max-width: 250px;
+    background-color: antiquewhite;
+    position: absolute; 
+    left:1014px;
+    top:69px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+#headBuffer img{
+    padding-left: 25px;
+}
+
+#log{
+    color: antiquewhite;
+    width: 150px;
+    font-size: 12px;
+    float: right;
+    margin-right: -180px;
+    margin-top: -30px;
+   
+
+}
+#log input{
+    
+    margin: 4px;
+    margin: 4px;
+}
+#log label{
+    display: inline-block;
+    text-align: center;
+}
+#log fieldset{
+ 
+     background-color: rgba(255, 255, 255, .2);
+}
+#logged{
+    position: fixed;
+    bottom: 0px;
+ 
+    font-size: 12px;
+}
+#mainFoot{
+    min-height: 250px;
+    background-color: dimgray;
+    margin-top: 100%;    
+    color: antiquewhite;
+    font-size: 12px;
+    
+    
+}
+#mainFoot ul{
+    list-style-type: none;
+}
+
+#mainFoot li{
+    display: inline-block;
+    float: right;
+    padding: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Dead Simple Grid (c) 2012 Vladimir Agafonkin */
+
+.col {
+	padding: 0 1.5em;
+}
+.row .row {
+	margin: 0 -1.5em;
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+
+@media only screen {
+	.col {
+		float: left;
+		width: 100%;
+
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+}
+/*
+body {
+	nt-family: "Helvetica Neue", Helvetica, Arial, sans-serif;	
+    margin: 0;
+}
+a {
+	color: #06f;
+}
+h1 {
+	font-size: 2.2em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h2, h3, h4 {
+	margin-top: 0;
+}
+h3, h4 {
+	margin-bottom: 0.5em;
+}
+
+p, ul {
+	font-size: 0.8125em;
+	line-height: 1.5;
+	margin: 0 0 1.5em;
+}
+code {
+	font-size: 1.2727em;
+	color: #777;
+}
+iframe {
+	border: 0;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 90em;
+	padding: 1em 0;
+} 
+
+.footer {
+	padding-top: 1.5em;
+}
+.desc {
+	color: #888;
+}
+.intro {
+	border-bottom: 1px dotted #bbb;
+	padding-bottom: 1.5em;
+}
+.social {
+	border-top: 1px dotted #bbb;
+	padding-top: 1.5em;
+}
+
+
+
+.footer {
+	border-top: 1px dotted #aaa;
+}
+.content {
+	border-bottom: 1px dotted #aaa;
+	margin-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 34em) {
+	p, ul {
+		font-size: 0.875em;
+	}
+	.feature:first-child,
+	.info:first-child {
+		border-right: 1px dotted #aaa;
+	}
+	.container {
+		padding: 1em;
+	}
+	h1 {
+		font-size: 2.6em;
+	}
+	h2 {
+		font-size: 1.6em;
+	}
+}
+
+@media only screen and (min-width: 54em) {
+	.content {
+		border: none;
+		border-right: 1px dotted #aaa;
+		margin-bottom: 0;
+	}
+	.info:first-child {
+		border: none;
+	}
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 1.7em;
+	}
+}
+
+@media only screen and (min-width: 76em) {
+	.info:first-child {
+		border-right: 1px dotted #aaa;
+	}
+	h1 {
+		font-size: 3.2em;
+	}
+	h2 {
+		font-size: 1.8em;
+	}
+}
+*/
